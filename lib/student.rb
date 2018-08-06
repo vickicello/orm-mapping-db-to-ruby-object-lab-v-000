@@ -61,7 +61,7 @@ class Student
       self.new_from_db(row)
     end
   end
- 
+
   def self.students_below_12th_grade
     sql = "SELECT * FROM students where grade < 12"
     DB[:conn].execute(sql).map do |row|
@@ -89,5 +89,5 @@ class Student
       self.new_from_db(row)
     end
   end
- 
+
 end
