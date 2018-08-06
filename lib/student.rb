@@ -9,8 +9,6 @@ class Student
     new_student
   end
 
-  end
-
   def self.all
     sql = <<-SQL
       SELECT *
